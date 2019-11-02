@@ -6,7 +6,13 @@ namespace Open_Lab_04._07
     {
         public string Reverse(string original)
         {
-            throw new NotImplementedException();
+            char[] cArray = original.ToCharArray();
+            string reverse = String.Empty;
+            for (int i = cArray.Length - 1; i > -1; i--)
+            {
+                reverse = reverse + cArray[i];
+            }
+            return reverse;
         }
     }
 }
